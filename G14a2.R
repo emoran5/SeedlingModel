@@ -69,7 +69,7 @@ S.CD <- S.CD[Live]/100; P.CD <- P.CD[Live]/100
 S.PD <- S.PD[Live]/100; P.PD <- P.PD[Live]/100
 CWD.CD <- CWD.CD[Live]/100; CWD.PD <- CWD.PD[Live]/100
 
-#Reduced size indicator; 10, 25-50, 75-135
+#Reduced size indicator; <10, 10-50, 50-140
 s.10 <- SZ[Live,1]; s.25_50 <- apply(SZ[Live,2:3],1,sum); s.75 <- apply(SZ[Live,4:6],1,sum)
 SZ.red <- cbind(s.10,s.25_50,s.75)
 

@@ -76,7 +76,7 @@ Clim1 <- (JMx.CD+JMx.PD)/2; Clim2 <- (P.CD+P.PD)/2 #M1
 #Clim1 <- (JMx.C+JMx.P)/2; Clim2 <-(P.C+P.P)/2 #M2
 #Clim1 <- (JMx.C+JMx.P)/2; Clim2 <-(S.C+S.P)/2 #N2
 
-#Reduced size indicator; 10, 25-50, 75-135
+#Reduced size indicator; <10, 10-50, 50-140
 s.10 <- SZ[,1]; s.25_50 <- apply(SZ[,2:3],1,sum); s.75 <- apply(SZ[,4:6],1,sum)
 SZ.red <- cbind(s.10,s.25_50,s.75)
 
